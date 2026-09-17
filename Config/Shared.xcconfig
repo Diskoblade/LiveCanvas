@@ -1,0 +1,21 @@
+// Shared build settings for all targets.
+// Rename the product here; source code reads the name from the bundle at runtime.
+LC_PRODUCT_NAME = LiveCanvas
+LC_BUNDLE_ID_PREFIX = com.rahul
+LC_MARKETING_VERSION = 0.1.0
+LC_BUILD_NUMBER = 1
+
+SWIFT_VERSION = 5.0
+SWIFT_STRICT_CONCURRENCY = minimal
+SWIFT_UPCOMING_FEATURE_EXISTENTIAL_ANY = NO
+MACOSX_DEPLOYMENT_TARGET = 15.0
+
+// No paid signing identity on this machine: ad-hoc sign locally.
+// Milestone 9 swaps this for a Developer ID identity and notarization.
+CODE_SIGN_STYLE = Manual
+CODE_SIGN_IDENTITY = -
+DEVELOPMENT_TEAM =
+ENABLE_HARDENED_RUNTIME = YES
+
+MARKETING_VERSION = $(LC_MARKETING_VERSION)
+CURRENT_PROJECT_VERSION = $(LC_BUILD_NUMBER)

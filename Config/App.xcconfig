@@ -1,0 +1,21 @@
+#include "Shared.xcconfig"
+
+PRODUCT_NAME = $(LC_PRODUCT_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = $(LC_BUNDLE_ID_PREFIX).livecanvas
+PRODUCT_MODULE_NAME = LiveCanvas
+CODE_SIGN_ENTITLEMENTS = Config/LiveCanvas.entitlements
+ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor
+COMBINE_HIDPI_IMAGES = YES
+ENABLE_PREVIEWS = YES
+
+GENERATE_INFOPLIST_FILE = YES
+INFOPLIST_FILE = Config/Info.plist
+INFOPLIST_KEY_CFBundleDisplayName = $(LC_PRODUCT_NAME)
+INFOPLIST_KEY_LSApplicationCategoryType = public.app-category.utilities
+INFOPLIST_KEY_NSHumanReadableCopyright = 
+INFOPLIST_KEY_NSMainStoryboardFile = 
+INFOPLIST_KEY_NSPrincipalClass = NSApplication
+INFOPLIST_KEY_LSUIElement = NO
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks
+SWIFT_EMIT_LOC_STRINGS = YES

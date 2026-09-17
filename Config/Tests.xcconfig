@@ -1,0 +1,9 @@
+#include "Shared.xcconfig"
+
+PRODUCT_NAME = LiveCanvasTests
+PRODUCT_BUNDLE_IDENTIFIER = $(LC_BUNDLE_ID_PREFIX).livecanvas.tests
+GENERATE_INFOPLIST_FILE = YES
+BUNDLE_LOADER = $(TEST_HOST)
+TEST_HOST = $(BUILT_PRODUCTS_DIR)/$(LC_PRODUCT_NAME).app/Contents/MacOS/$(LC_PRODUCT_NAME)
+LD_RUNPATH_SEARCH_PATHS = $(inherited) @executable_path/../Frameworks @loader_path/../Frameworks
+SWIFT_EMIT_LOC_STRINGS = NO

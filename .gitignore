@@ -1,0 +1,16 @@
+# Xcode
+xcuserdata/
+*.xcworkspace/xcuserdata/
+*.xcuserstate
+DerivedData/
+*.dSYM
+*.profraw
+*.hmap
+*.ipa
+
+# Build output, generated test media, screenshots and local backups of macOS files.
+# Nothing under build/ belongs in version control.
+build/
+
+# macOS
+.DS_Store
